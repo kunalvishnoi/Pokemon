@@ -1,6 +1,7 @@
 .flip {
   perspective: 600px;
-  display: block;
+  position: relative;
+  display: inline-block;
 }
 .flip .card {
   width: 90px;

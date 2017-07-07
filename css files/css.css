@@ -12,7 +12,7 @@ color: yellow;
   }
    @font-face {
     font-family: "nasalization";
-    src: url("fonts/nasalization-rg.ttf");
+    src: url("../fonts/nasalization-rg.ttf");
  	
 }
   .custom {
@@ -24,8 +24,8 @@ div {
 
 
 .rectangle{
-    width: 500px;
-    padding: 25px;
+    height: 125px;
+    padding: 15px;
      margin: 0 auto;
         
        
