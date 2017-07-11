@@ -1,5 +1,3 @@
-
-
 var series1=false;
 var cardProp1="";
 var series2=false;
@@ -23,7 +21,7 @@ cards[5] = {hp:70, weight:66, height:2.8};
 
 function cardsClick(no)
 {
-if(no==1||no==2||no==3){
+if(no==0||no==1||no==2){
 document.getElementById("1").style.display="none";
 series1=true;
 seriesCard1=no;
@@ -48,9 +46,9 @@ var spn=document.getElementById(series);
 spn.style.display="block";
 return;
 }
-if(prop="hp")
+if(prop=="hp")
 prop="hp";
-else if(prop="hgt")
+else if(prop=="hgt")
 prop="height";
 else
 prop="weight";
@@ -71,22 +69,36 @@ if(cardProp1!=""&&cardProp2!="")
 		alert("please select same property!!!");
 	}
 
+var value1=0;
+var value2=0;
+if(cardProp1=="hp"){
+	value1=cards[seriesCard1].hp;
+	value2=cards[seriesCard2].hp;
+}else if(cardProp1=="weight"){
+	value1=cards[seriesCard1].weight;
+	value2=cards[seriesCard2].weight;
+}
+else{
+value1=cards[seriesCard1].height;
+	value2=cards[seriesCard2].height;
 
-	alert(cardProp1);
-	alert(cardProp2);
-	var cs1=cards[seriesCard1].cardProp1;
-	var cs2=cards[seriesCard2].cardProp2;
-	//var cs1=document.getElementById("c"+series1);
-	//var cs2=document.getElementById("c"+seriesCard2);
 }
 
+if(value1>value2){
+document.getElementById("c"+seriesCard1).style.backgroundColor="green";
+document.getElementById("c"+seriesCard2).style.backgroundColor="red";
+
+document.getElementById("c"+seriesCard1).innerHTML="Hurree you win!!!";
+document.getElementById("1").style.display="block";
+document.getElementById("1").style.backgroundColor="green";
 }
 
-
-
-
-/*
-
- var holder1 = document.getElementById('card1');
-  var holder2 = document.getElementById('card2');
-
+else{
+	document.getElementById("c"+seriesCard1).style.backgroundColor="red";
+	document.getElementById("c"+seriesCard2).style.backgroundColor="green"
+	document.getElementById("2").innerHTML="Hurre you win!!!";
+	document.getElementById("2").style.display="block";
+	document.getElementById("2").style.backgroundColor="green";
+}
+}
+}

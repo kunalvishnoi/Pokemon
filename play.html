@@ -8,7 +8,7 @@
   <link rel="stylesheet" type="text/css" href="css files/css2.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="js.js"></script>
+  <script type="text/javascript" src="javascript/abc.js"></script>
   
    
   
@@ -29,14 +29,14 @@ background-size: 200px 200px;
 </head>
 <body>
 <div align="center"><p style="color: yellow;">PLAYER_1</p>
- <span id="1" style="color: red; display: none;">Select card</span>
+ <span id="1" style="color: yellow; display: none;">Select card</span>
 
 <div class="rectangle">
 
 
 
 
-<div class="flip"  id="c1" onclick="cardsClick(1)">
+<div class="flip"  id="c0" onclick="cardsClick(0)">
   <div class="card">
     <div class="face front">
       <img src="images/70_hires.png" height="90px" width="75px">
@@ -48,7 +48,7 @@ background-size: 200px 200px;
   
   </div>
 
-<div class="flip" id="c2" onclick="cardsClick(2)">
+<div class="flip" id="c1" onclick="cardsClick(1)">
   <div class="card">
     <div class="face front">
       <img src="images/70_hires.png" height="90px" width="75px">
@@ -61,7 +61,7 @@ background-size: 200px 200px;
   </div>
    
 
-  <div class="flip" id="c3" onclick="cardsClick(3)">
+  <div class="flip" id="c2" onclick="cardsClick(2)">
   <div class="card">
     <div class="face front">
       <img src="images/70_hires.png" height="90px" width="75px" >
@@ -89,7 +89,7 @@ background-size: 200px 200px;
 
 
 
-<div class="flip" id="c4" onclick="cardsClick(4)">
+<div class="flip" id="c3" onclick="cardsClick(3)">
   <div class="card">
     <div class="face front">
       <img src="images/70_hires.png" height="90px" width="75px" id="card2">
@@ -101,7 +101,7 @@ background-size: 200px 200px;
   
   </div>
 
-<div class="flip" id="c5" onclick="cardsClick(5)">
+<div class="flip" id="c4" onclick="cardsClick(4)">
   <div class="card">
     <div class="face front">
       <img src="images/70_hires.png" height="90px" width="75px">
@@ -112,7 +112,7 @@ background-size: 200px 200px;
   </div>
   
   </div>
-  <div class="flip" id="c6" onclick="cardsClick(6)">
+  <div class="flip" id="c5" onclick="cardsClick(5)">
   <div class="card">
     <div class="face front">
       <img src="images/70_hires.png" height="90px" width="75px">
@@ -124,9 +124,12 @@ background-size: 200px 200px;
   
   </div></div>
   <br>
-  <span id="2" style="color: red; display: none;">Select card</span>
+  <span id="2" style="color: yellow; display: none;">Select card</span>
 <div  style="color: yellow;"><p>PLAYER_2</p></div>
 </div>
+
+
+
 
 </body>
 </html>
