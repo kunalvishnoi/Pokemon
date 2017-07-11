@@ -29,14 +29,14 @@ background-size: 200px 200px;
 </head>
 <body>
 <div align="center"><p style="color: yellow;">PLAYER_1</p>
-
+ <span id="1" style="color: red; display: none;">Select card</span>
 
 <div class="rectangle">
 
 
 
 
-<div class="flip">
+<div class="flip"  id="c1" onclick="cardsClick(1)">
   <div class="card">
     <div class="face front">
       <img src="images/70_hires.png" height="90px" width="75px">
@@ -48,7 +48,7 @@ background-size: 200px 200px;
   
   </div>
 
-<div class="flip">
+<div class="flip" id="c2" onclick="cardsClick(2)">
   <div class="card">
     <div class="face front">
       <img src="images/70_hires.png" height="90px" width="75px">
@@ -57,9 +57,11 @@ background-size: 200px 200px;
       <img src="images/18.png" height="90px" width="75px" id="card1">
     </div>
   </div>
-  
+ 
   </div>
-  <div class="flip">
+   
+
+  <div class="flip" id="c3" onclick="cardsClick(3)">
   <div class="card">
     <div class="face front">
       <img src="images/70_hires.png" height="90px" width="75px" >
@@ -73,21 +75,21 @@ background-size: 200px 200px;
   </div>
 
 <br>
- <button style="color: yellow;" type="button" class="btn btn-primary" id="mybtn" onclick="shuffle(0,'hp')">HP </button> &nbsp;&nbsp; &nbsp;&nbsp;
- <button style="color: yellow;" type="button" class="btn btn-primary" onclick="shuffle(1,'height')">HEIGHT </button> &nbsp;&nbsp; &nbsp;&nbsp;
- <button style="color: yellow;" type="button" class="btn btn-primary" onclick="shuffle(2,'weight')">WEIGHT </button>
+ <button style="color: yellow;" type="button" class="btn btn-primary" onclick="propClick(1,'hp')">HP </button> &nbsp;&nbsp; &nbsp;&nbsp;
+ <button style="color: yellow;" type="button" class="btn btn-primary" onclick="propClick(1,'hgt')">HEIGHT </button> &nbsp;&nbsp; &nbsp;&nbsp;
+ <button style="color: yellow;" type="button" class="btn btn-primary" onclick="propClick(1,'wgt')">WEIGHT </button>
 <p style="z-index: 100" id="demo"></p>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<button style="color: yellow;" type="button" class="btn btn-primary" onclick="shuffle(0,'hp')">HP </button> &nbsp;&nbsp; &nbsp;&nbsp;
- <button style="color: yellow;" type="button" class="btn btn-primary" onclick="shuffle(1, 'height')">HEIGHT </button> &nbsp;&nbsp; &nbsp;&nbsp;
- <button style="color: yellow;" type="button" class="btn btn-primary" onclick="shuffle(2,'weight')">WEIGHT </button>
+<button style="color: yellow;" type="button" class="btn btn-primary" onclick="propClick(2,'hp')">HP </button> &nbsp;&nbsp; &nbsp;&nbsp;
+ <button style="color: yellow;" type="button" class="btn btn-primary" onclick="propClick(2,'hgt')">HEIGHT </button> &nbsp;&nbsp; &nbsp;&nbsp;
+ <button style="color: yellow;" type="button" class="btn btn-primary" onclick="propClick(2,'wgt')">WEIGHT </button>
 <br><br>
 <div class="rectangle">
 
 
 
 
-<div class="flip">
+<div class="flip" id="c4" onclick="cardsClick(4)">
   <div class="card">
     <div class="face front">
       <img src="images/70_hires.png" height="90px" width="75px" id="card2">
@@ -99,7 +101,7 @@ background-size: 200px 200px;
   
   </div>
 
-<div class="flip">
+<div class="flip" id="c5" onclick="cardsClick(5)">
   <div class="card">
     <div class="face front">
       <img src="images/70_hires.png" height="90px" width="75px">
@@ -110,7 +112,7 @@ background-size: 200px 200px;
   </div>
   
   </div>
-  <div class="flip">
+  <div class="flip" id="c6" onclick="cardsClick(6)">
   <div class="card">
     <div class="face front">
       <img src="images/70_hires.png" height="90px" width="75px">
@@ -122,6 +124,7 @@ background-size: 200px 200px;
   
   </div></div>
   <br>
+  <span id="2" style="color: red; display: none;">Select card</span>
 <div  style="color: yellow;"><p>PLAYER_2</p></div>
 </div>
 
