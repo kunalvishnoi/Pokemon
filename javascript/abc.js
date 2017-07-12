@@ -16,7 +16,7 @@ cards[1] = {hp:65, weight:106, height:4.11};
 cards[2] = {hp:60, weight:147, height:3.11};
 cards[3] = {hp:40, weight:19, height:2 };
 cards[4] = {hp:50, weight:54, height:2.7};
-cards[5] = {hp:70, weight:66, height:2.8};
+cards[5] = {hp:70, weight:40, height:2.8};
 
 
 function cardsClick(no)
@@ -88,17 +88,21 @@ if(value1>value2){
 document.getElementById("c"+seriesCard1).style.backgroundColor="green";
 document.getElementById("c"+seriesCard2).style.backgroundColor="red";
 
-document.getElementById("c"+seriesCard1).innerHTML="Hurree you win!!!";
+document.getElementById("1").innerHTML="You won '30' berries!!!";
 document.getElementById("1").style.display="block";
 document.getElementById("1").style.backgroundColor="green";
 }
 
-else{
+else if(value2>value1){
 	document.getElementById("c"+seriesCard1).style.backgroundColor="red";
 	document.getElementById("c"+seriesCard2).style.backgroundColor="green"
-	document.getElementById("2").innerHTML="Hurre you win!!!";
+	document.getElementById("2").innerHTML="You won '30' berries!!!";
 	document.getElementById("2").style.display="block";
 	document.getElementById("2").style.backgroundColor="green";
+}
+else{
+
+	alert("choose another card with same property");
 }
 }
 }
