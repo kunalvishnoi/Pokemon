@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <title>RULES</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css files/css.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+  <img class="mySlides" src="images/XY042.png"
+  style="width:100%">
+  <img class="mySlides" src="images/ep30.jpg"
+  style="width:100%">
+  <img class="mySlides " src="images/123.png"
+  style="width:100%">
+
+
+
+<div align="center"><h2 style="color: yellow;">RULES</h2></div>
+<ul style="color: yellow;">
+  <p><img src="images/logo2.png" height="15px;" width="15px;">RULE1</p>
+  <p><img src="images/logo2.png" height="15px;" width="15px;">RULE2</p>
+  <p><img src="images/logo2.png" height="15px;" width="15px;">RULE3</p>
+  <p><img src="images/logo2.png" height="15px;" width="15px;">RULE4</p>
+  <p><img src="images/logo2.png" height="15px;" width="15px;">RULE5</p>
+  <p><img src="images/logo2.png" height="15px;" width="15px;">RULE6</p>
+  <p><img src="images/logo2.png" height="15px;" width="15px;">RULE7</p>
+  <p><img src="images/logo2.png" height="15px;" width="15px;">RULE8</p>
+  <p><img src="images/logo2.png" height="15px;" width="15px;">RULE9</p>
+  <p><img src="images/logo2.png" height="15px;" width="15px;">RULE10</p>
+  
+</ul>
+
+<hr>
+<div align="center"><a style="color: yellow" href="http://www.hackncs.com"> &copy;NIBBLE COMPUTER SOCIETY</a></span></div>
+<script>
+
+var Index = 0;
+change();
+
+function change() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    Index++;
+    if (Index > x.length) {Index = 1}
+    x[Index-1].style.display = "block";
+    setTimeout(change, 1500);
+}
+</script>
