@@ -1,6 +1,7 @@
-body
 
-    {
+body{
+  
+  
      margin: 10px;
       background-color: #326872;
        }
@@ -49,5 +50,8 @@ border-radius: 10%;
 background-color: silver;
 }
 
+.yup
+{
+	max-height: 500px;
 }
    
