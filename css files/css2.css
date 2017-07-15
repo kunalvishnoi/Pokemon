@@ -41,21 +41,16 @@ background-color: silver;
       overflow: hidden;
 
   }
- @media only screen and (max-width: 768px) {
-    .rectangle
+  .rectangle
      {
       max-height: 90px;
       padding: 3px;
       overflow: hidden;
     }
-  }
-
-@media only screen and (max-width: 768px) {
-    img {
-      max-height: 90px;
-      max-width: 90px;
+      img {
+      max-height: 80px;
+      max-width: 80px;
       overflow: hidden;
 
   }
-
 

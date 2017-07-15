@@ -56,9 +56,28 @@ div {
 border-radius: 10%;
 background-color: silver;
 }
+.yo{
+
+}
+.logo{
+
+}
 
 .yup
 {
 	max-height: 500px;
 }
-   
+    @media only screen and (max-width: 768px) {
+   .logo img {
+      max-height: 150px;
+      max-width: 200px;
+     
+      
+      overflow: hidden;
+
+  }
+  .yo img{
+    max-height: 75px;
+    max-width: 90px;
+  }
+}
