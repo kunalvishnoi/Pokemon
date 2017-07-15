@@ -1,7 +1,14 @@
 
-body{
-  
-  
+@media only screen and (max-width: 500px) {
+    body {
+        max-height: 100%;
+        max-width: 100%;
+        
+    }}
+
+
+    body{
+
      margin: 10px;
       background-color: #326872;
        }

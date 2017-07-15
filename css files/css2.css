@@ -24,7 +24,38 @@
 .flip .card .back {
   transform: rotateY(-180deg);
 }
+.rectangle{
+    height: 125px;
+    padding: 15px;
+     margin: 0 auto;
+        
+       
+border-radius: 10%;
+background-color: silver;
+}
 
+ @media only screen and (max-width: 768px) {
+   .rectangle img {
+      max-height: 80px;
+      max-width: 80px;
+      overflow: hidden;
 
+  }
+ @media only screen and (max-width: 768px) {
+    .rectangle
+     {
+      max-height: 90px;
+      padding: 3px;
+      overflow: hidden;
+    }
+  }
+
+@media only screen and (max-width: 768px) {
+    img {
+      max-height: 90px;
+      max-width: 90px;
+      overflow: hidden;
+
+  }
 
 
