@@ -43,8 +43,8 @@ background-color: silver;
   }
   .rectangle
      {
-      max-height: 90px;
-      padding: 3px;
+      max-height: 85px;
+      padding: 2px;
       overflow: hidden;
     }
       img {
