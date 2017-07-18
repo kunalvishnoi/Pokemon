@@ -86,6 +86,7 @@ background-color: silver;
       overflow: hidden;
 
   }
+  
   .ScrollStyle
 {
     
@@ -93,7 +94,10 @@ background-color: silver;
     overflow-y: scroll;
     
 }
+
 }
+
+
 .color{
   color: #ffcb05;
 }
@@ -101,4 +105,8 @@ background-color: silver;
 {
     
     overflow-y: auto;
+}
+
+.my{
+  margin-left: 13px;
 }
