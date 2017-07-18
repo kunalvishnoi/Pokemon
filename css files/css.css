@@ -3,7 +3,8 @@
 
     body{
 
-     margin: 10px;
+     margin-top: 10px;
+     overflow-x: hidden;
       background-color: #326872;
        }
       .glyphicon{
@@ -54,11 +55,18 @@ background-color: silver;
 .yo{
 
 }
+.log{
+margin-left: 40px;
+}
 .logo{
-
+width: 
+100%;
 }
 .sign{
-
+width: 100%;
+}
+.score{
+margin-left: 20px;
 }
 
 .yup
@@ -94,6 +102,9 @@ background-color: silver;
     overflow-y: scroll;
     
 }
+.log{
+  margin-left: 0px;
+}
 
 }
 
@@ -108,5 +119,5 @@ background-color: silver;
 }
 
 .my{
-  margin-left: 13px;
+  margin-left: 
 }
