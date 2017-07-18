@@ -15,7 +15,7 @@ color: #ffcb05;
   
 .save_button {
     min-width: 100px;
-    max-width: 115px;
+    max-width: 125px;
       box-shadow: 0px 10px 10px -7px #888888;
 }
 input[type=name] {
